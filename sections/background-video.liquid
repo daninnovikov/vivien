@@ -324,21 +324,24 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      align-items: center; // Center children horizontally
     }
 
     .videoBackground .videoBoxInfoTitle,
     .videoBackground .imageBoxInfoTitle {
-      margin: 5px 0 0; // Small top margin, no bottom margin
+      margin: 10px 0 0; // Small top margin, no bottom margin
       font-size: 36px;
+      text-align: center; // Center the title text
     }
 
     .videoBackground .videoBoxInfoBtn,
     .videoBackground .imageBoxInfoBtn {
       position: relative;
-      bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      margin: 0 0 5px; // Small bottom margin, no top margin
+      margin: 0 auto 10px; // Center horizontally and add bottom margin
+      width: auto; // Allow button to size based on content
+      display: inline-block; // Ensure button width is based on content
     }
 
     .videoBackground .videoBoxInfoDescription,
@@ -347,7 +350,9 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 5px 0; // Add some vertical padding to the description
+      align-items: center; // Center content horizontally
+      padding: 10px 0; // Add some vertical padding to the description
+      text-align: center; // Center the description text
     }
 
     .videoBackground .videoBoxInfoDescription p,
@@ -679,3 +684,4 @@
   ]
 }
 {% endschema %}
+
