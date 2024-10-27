@@ -46,13 +46,15 @@
           {% endif %}
 
           {% if block.settings.button_link != blank and block.settings.button_label != blank %}
-            <a
-              href="{{ block.settings.button_link }}"
-              class="videoBoxInfoBtn"
-              style="color: {{ block.settings.color_btn_text }}; background: {{ block.settings.color_btn_bg }}"
-            >
-              {{ block.settings.button_label | escape }}
-            </a>
+            <div class="videoBoxInfoBtnWrapper">
+              <a
+                href="{{ block.settings.button_link }}"
+                class="videoBoxInfoBtn"
+                style="color: {{ block.settings.color_btn_text }}; background: {{ block.settings.color_btn_bg }}"
+              >
+                {{ block.settings.button_label | escape }}
+              </a>
+            </div>
           {% endif %}
         </div>
       </div>
@@ -84,13 +86,15 @@
           {% endif %}
 
           {% if block.settings.button_link != blank and block.settings.button_label != blank %}
-            <a
-              href="{{ block.settings.button_link }}"
-              class="imageBoxInfoBtn"
-              style="color: {{ block.settings.color_btn_text }}; background: {{ block.settings.color_btn_bg }}"
-            >
-              {{ block.settings.button_label | escape }}
-            </a>
+            <div class="imageBoxInfoBtnWrapper">
+              <a
+                href="{{ block.settings.button_link }}"
+                class="imageBoxInfoBtn"
+                style="color: {{ block.settings.color_btn_text }}; background: {{ block.settings.color_btn_bg }}"
+              >
+                {{ block.settings.button_label | escape }}
+              </a>
+            </div>
           {% endif %}
         </div>
       </div>
@@ -303,7 +307,7 @@
       min-height: 300px;
       height: 100vh; // Full viewport height
       position: relative;
-      padding: 5px; // Remove all padding
+      padding: 0; // Remove all padding
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -332,16 +336,7 @@
       margin: 10px 0 0; // Small top margin, no bottom margin
       font-size: 36px;
       text-align: center; // Center the title text
-    }
-
-    .videoBackground .videoBoxInfoBtn,
-    .videoBackground .imageBoxInfoBtn {
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      margin: 0 auto 10px; // Center horizontally and add bottom margin
-      width: auto; // Allow button to size based on content
-      display: inline-block; // Ensure button width is based on content
+      width: 100%; // Ensure full width
     }
 
     .videoBackground .videoBoxInfoDescription,
@@ -353,6 +348,21 @@
       align-items: center; // Center content horizontally
       padding: 10px 0; // Add some vertical padding to the description
       text-align: center; // Center the description text
+      width: 100%; // Ensure full width
+    }
+
+    .videoBackground .videoBoxInfoBtn,
+    .videoBackground .imageBoxInfoBtn {
+      margin-bottom: 10px; // Add bottom margin
+      width: auto; // Allow button to size based on content
+    }
+
+    .videoBackground .videoBoxInfoBtnWrapper,
+    .videoBackground .imageBoxInfoBtnWrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%; // Ensure full width
+      margin-top: auto; // Push to the bottom
     }
 
     .videoBackground .videoBoxInfoDescription p,
