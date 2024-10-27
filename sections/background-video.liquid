@@ -154,63 +154,33 @@
     object-fit: cover;
   }
 
-  .videoBackground .videoBox {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: flex-end;
-
-    flex-direction: column;
-
-    padding: 100px 20px 80px;
-
-    background-size: cover;
-
-    background-position: center;
-
-    background-repeat: no-repeat;
-
-    min-height: 500px;
-
-    max-height: 800px;
-
-    height: calc(100vh - 165px);
-
-    position: relative;
-  }
-
+  .videoBackground .videoBox,
   .videoBackground .imageBox {
     display: flex;
-
-    align-items: center;
-
-    justify-content: flex-end;
-
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
-
-    padding: 100px 20px 80px;
-
+    padding: 20px 10px 10px;
     background-size: cover;
-
     background-position: center;
-
     background-repeat: no-repeat;
-
+    min-height: 500px;
+    max-height: 800px;
+    height: calc(100vh - 165px);
     position: relative;
-
-    min-height: calc(100vh - 165px);
-
-    height: auto;
   }
 
   .videoBackground .videoBoxInfo,
   .videoBackground .imageBoxInfo {
     z-index: 2;
-
-    margin: auto;
-
+    margin: 0;
     text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 10px;
   }
 
   .videoBackground .overlay {
@@ -275,7 +245,13 @@
 
     font-size: 16px;
 
-    margin-top: 20px;
+    margin-top: auto;
+    margin-bottom: 20px;
+    align-self: center;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .videoBackground .videoBoxInfoTitle,
@@ -284,7 +260,11 @@
 
     font-size: 65px;
 
-    line-height: 40px;
+    line-height: 1.2;
+
+    margin-top: 10px;
+
+    margin-bottom: 15px;
   }
 
   .videoBackground .videoBoxInfoDescription,
@@ -337,16 +317,26 @@
     }
 
     .videoBackground .videoBoxInfo {
-      padding: 2px 20px;
-      width: 100%;
+      padding: 5px 20px 40px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .videoBoxInfoTitle {
-      display: none;
+      display: block;
+      margin-top: 5px;
+      font-size: 36px;
     }
 
-    .videoBackground .videoBoxInfoBtn {
-      display: inline-block;
+    .videoBackground .videoBoxInfoBtn,
+    .videoBackground .imageBoxInfoBtn {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      transform: none;
+      margin-top: 20px;
     }
 
     .videoBackground .videoBoxInfoDescription,
@@ -683,3 +673,4 @@
   ]
 }
 {% endschema %}
+
