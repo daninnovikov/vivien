@@ -298,14 +298,15 @@
       z-index: 3;
     }
 
-    .videoBackground .videoBox {
+    .videoBackground .videoBox,
+    .videoBackground .imageBox {
       min-height: 300px;
-
-      height: 100%;
-
+      height: calc(100vh); // Adjust this value as needed
       position: relative;
-
-      padding: 0;
+      padding: 20px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .videoBackground .fullscreen-video-wrap {
@@ -316,32 +317,36 @@
       z-index: -2;
     }
 
-    .videoBackground .videoBoxInfo {
-      padding: 5px 20px 40px;
+    .videoBackground .videoBoxInfo,
+    .videoBackground .imageBoxInfo {
+      padding: 0;
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
 
-    .videoBoxInfoTitle {
-      display: block;
-      margin-top: 5px;
+    .videoBackground .videoBoxInfoTitle,
+    .videoBackground .imageBoxInfoTitle {
+      margin-top: 0;
       font-size: 36px;
     }
 
     .videoBackground .videoBoxInfoBtn,
     .videoBackground .imageBoxInfoBtn {
       position: relative;
-      bottom: auto;
-      left: auto;
-      transform: none;
-      margin-top: 20px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 5px;
     }
 
     .videoBackground .videoBoxInfoDescription,
     .videoBackground .imageBoxInfoDescription {
-      color: #333 !important;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .videoBackground .videoBoxInfoDescription p,
