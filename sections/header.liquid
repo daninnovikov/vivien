@@ -263,14 +263,14 @@
         {%- endif -%}
       </div>
       
-      <a href="{{ routes.search_url }}" class="header__icon header__icon--search link focus-inset">
+      <a href="{{ routes.search_url }}" class="header__icon header__icon--search link focus-inset small-hide medium-hide">
         <span>Search</span>
       </a>
 
       {%- if shop.customer_accounts_enabled -%}
         <a
           href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
-          class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}"
+          class="header__icon header__icon--account link focus-inset small-hide medium-hide"
           rel="nofollow"
         >
           <span>
@@ -667,6 +667,9 @@
   ]
 }
 {% endschema %}
+
+
+
 
 
 

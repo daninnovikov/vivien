@@ -139,7 +139,7 @@
             {%- if shop.customer_accounts_enabled -%}
               <a
                 href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
-                class="menu-drawer__account link focus-inset h5 medium-hide large-up-hide"
+                class="menu-drawer__account link focus-inset h5 large-up-hide"
                 rel="nofollow"
               >
                 {%- if section.settings.enable_customer_avatar -%}
@@ -293,3 +293,17 @@
     </div>
   </details>
 </header-drawer>
+
+<style>
+  @media screen and (max-width: 989px) {
+    .menu-drawer__utility-links {
+      padding-left: 2rem;
+      padding-bottom: 2rem;
+    }
+    
+    .menu-drawer__account {
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+</style>
