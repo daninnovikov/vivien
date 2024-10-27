@@ -301,9 +301,9 @@
     .videoBackground .videoBox,
     .videoBackground .imageBox {
       min-height: 300px;
-      height: calc(100vh); // Adjust this value as needed
+      height: 100vh; // Full viewport height
       position: relative;
-      padding: 20px 10px;
+      padding: 5px; // Remove all padding
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -328,7 +328,7 @@
 
     .videoBackground .videoBoxInfoTitle,
     .videoBackground .imageBoxInfoTitle {
-      margin-top: 0;
+      margin: 5px 0 0; // Small top margin, no bottom margin
       font-size: 36px;
     }
 
@@ -338,7 +338,7 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      margin-top: 5px;
+      margin: 0 0 5px; // Small bottom margin, no top margin
     }
 
     .videoBackground .videoBoxInfoDescription,
@@ -347,6 +347,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      padding: 5px 0; // Add some vertical padding to the description
     }
 
     .videoBackground .videoBoxInfoDescription p,
@@ -678,4 +679,3 @@
   ]
 }
 {% endschema %}
-
