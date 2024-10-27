@@ -70,6 +70,44 @@
       padding-top: 0.5rem;
     }
   }
+
+  .header__icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header__icon {
+    white-space: nowrap;
+    text-decoration: none;
+    color: rgba(var(--color-foreground), 0.75);
+    transition: text-decoration var(--duration-short) ease;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .header__icon:hover {
+    color: rgb(var(--color-foreground));
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+  }
+
+  .header__icon--account,
+  .header__icon--cart {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .header__icon .icon {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  @media screen and (min-width: 990px) {
+    .header__icon--cart {
+      justify-self: end;
+    }
+  }
 </style>
 
 {%- style -%}
@@ -224,7 +262,10 @@
           </localization-form>
         {%- endif -%}
       </div>
-      {% render 'header-search', input_id: 'Search-In-Modal' %}
+      
+      <a href="{{ routes.search_url }}" class="header__icon header__icon--search link focus-inset">
+        <span>Search</span>
+      </a>
 
       {%- if shop.customer_accounts_enabled -%}
         <a
@@ -232,23 +273,12 @@
           class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}"
           rel="nofollow"
         >
-          {%- if section.settings.enable_customer_avatar -%}
-            <account-icon>
-              {%- if customer and customer.has_avatar? -%}
-                {{ customer | avatar }}
-              {%- else -%}
-                <span class="svg-wrapper">{{ 'icon-account.svg' | inline_asset_content }}</span>
-              {%- endif -%}
-            </account-icon>
-          {%- else -%}
-            <span class="svg-wrapper">{{ 'icon-account.svg' | inline_asset_content }}</span>
-          {%- endif -%}
-          <span class="visually-hidden">
+          <span>
             {%- liquid
               if customer
-                echo 'customer.account_fallback' | t
+                echo 'Account'
               else
-                echo 'customer.log_in' | t
+                echo 'Log in'
               endif
             -%}
           </span>
@@ -263,12 +293,7 @@
       {%- endfor -%}
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-          {% if cart == empty %}
-            <span class="svg-wrapper">{{'icon-cart-empty.svg' | inline_asset_content }}</span>
-          {% else %}
-            <span class="svg-wrapper">{{'icon-cart.svg' | inline_asset_content }}</span>
-          {% endif %}
-        <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+        <span>Cart</span>
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
             {%- if cart.item_count < 100 -%}
@@ -642,3 +667,7 @@
   ]
 }
 {% endschema %}
+
+
+
+
