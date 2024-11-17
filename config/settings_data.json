@@ -110,12 +110,12 @@
     "brand_description": "<p></p>",
     "brand_image_width": 100,
     "social_facebook_link": "",
-    "social_instagram_link": "",
+    "social_instagram_link": "https://www.instagram.com/_vivienvibe_",
     "social_youtube_link": "",
-    "social_tiktok_link": "",
+    "social_tiktok_link": "https://tiktok.com/vivienvibe",
     "social_twitter_link": "",
     "social_snapchat_link": "",
-    "social_pinterest_link": "",
+    "social_pinterest_link": "https://pinterest.com/vivienvibe",
     "social_tumblr_link": "",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
@@ -141,15 +141,12 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "1986737046835575827": {
         "type": "shopify://apps/az-google-font-custom-fonts/blocks/arc_fontify_block-app-embed/e720f1f7-5778-4825-85a3-3572dbcf27c4",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     },
     "color_schemes": {
@@ -414,8 +411,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-
-    ]
+    "custom_css": []
   }
 }
