@@ -27,11 +27,18 @@
             "heading": "Customer service",
             "menu": "customer-service"
           }
+        },
+        "brand_information_ejqzeb": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
         }
       },
       "block_order": [
         "link_list_pADgzp",
-        "link_list_YRF9jM"
+        "link_list_YRF9jM",
+        "brand_information_ejqzeb"
       ],
       "custom_css": [],
       "settings": {
@@ -39,7 +46,7 @@
         "newsletter_enable": true,
         "newsletter_heading": "Sign up to our newsletter",
         "enable_follow_on_shop": false,
-        "show_social": true,
+        "show_social": false,
         "enable_country_selector": true,
         "enable_language_selector": true,
         "payment_enable": false,
