@@ -127,7 +127,7 @@
         "layout": "text_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
+        "content_layout": "overlap",
         "section_color_scheme": "scheme-1",
         "color_scheme": "scheme-8be215f8-ba32-4a4f-8d1a-22acbef0e56b",
         "image_behavior": "none",
