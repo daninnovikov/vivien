@@ -12,5 +12,12 @@
   "context": {
     "market": "cz"
   },
-  "sections": {}
+  "sections": {
+    "footer": {
+      "settings": {
+        "color_scheme": "scheme-8be215f8-ba32-4a4f-8d1a-22acbef0e56b"
+      },
+      "blocks": {}
+    }
+  }
 }
