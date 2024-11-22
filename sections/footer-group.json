@@ -24,7 +24,7 @@
         "link_list_YRF9jM": {
           "type": "link_list",
           "settings": {
-            "heading": "Customer service",
+            "heading": "Information",
             "menu": "customer-service"
           }
         },
@@ -44,7 +44,7 @@
       "settings": {
         "color_scheme": "scheme-8be215f8-ba32-4a4f-8d1a-22acbef0e56b",
         "newsletter_enable": true,
-        "newsletter_heading": "Sign up to our newsletter",
+        "newsletter_heading": "Glaze your inbox with tips, tricks & exclusive content from VivienVibe",
         "enable_follow_on_shop": false,
         "show_social": false,
         "enable_country_selector": true,
