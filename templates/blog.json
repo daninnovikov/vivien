@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -11,9 +20,40 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_XwftE6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_nfgCTE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shipping and Delivery",
+            "heading_size": "h1"
+          }
+        },
+        "text_7rjRJG": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>PRE ORDER </strong></p><p>All \"Pre Order\" items are made in limited quantites and ship based on time frame specficied within each product description. Shipment delays do not qualify for refunds. Please do not email us for updates on your order if the estimated time for shipment has not yet elapsed. Please email allocation@mirrorpalais.com if your tracking number is not sent in the estimated time frame.</p><p>At this time all domestic orders are shipped using the United States Postal Service. Please follow your tracking number for updates with tracking. If there is an issue with your delivery please follow up directly with the USPS with your tracking number.</p><p><strong>SIGNATURE REQUIRED</strong></p><p>All orders placed over $1,000 USD require a signature to be delivered, please follow along with your delivery notifications to ensure your packages reach you safely.</p><p><strong>INTERNATIONAL ORDERS</strong></p><p>We currently offer international shipping via DHL. Additional duties and taxes may occur depending on the region in which you live. We are not responsible for additional shipping charges incurred upon delivery and will not accept returns or issue refunds to customers on orders that were not received due to unpaid duties.</p><p>Import fees vary by country, to get an estimate of the expected fees due in your region please reach out to your local DHL representative for the best possible estimate. </p><p><strong>EXPRESS SHIPPING</strong></p><p>If your item is prepared and you would like it to be shipped express please email allocation@mirrorpalais.com . All express shipments are sent via FEDEX and any additional charges will be sent via Shopify invoice or PayPal.</p><p><strong>ROUTE SHIPPING PROTECTION </strong></p><p> </p><p>We offer <a href=\"https://route.com/\">Route</a> Shipping Protection from damage, loss, & theft for 2% of your carts total. Route Protection can be applied to your order at checkout.<strong>Mirror Palais is not liable for lost, damaged, or stolen items for orders not protected by Route</strong>. Any questions or concerns please contact allocation@mirrorpalais.com</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_nfgCTE",
+        "text_7rjRJG"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_XwftE6"
   ]
 }
