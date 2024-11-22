@@ -17,7 +17,7 @@
         "link_list_pADgzp": {
           "type": "link_list",
           "settings": {
-            "heading": "Vivien vibe",
+            "heading": "Policies",
             "menu": "main-menu"
           }
         },
@@ -42,7 +42,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-8be215f8-ba32-4a4f-8d1a-22acbef0e56b",
         "newsletter_enable": true,
         "newsletter_heading": "Sign up to our newsletter",
         "enable_follow_on_shop": false,
