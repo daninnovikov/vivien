@@ -34,7 +34,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Now available",
+        "title": "Meet our set",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -95,7 +95,7 @@
         "heading_w8r4jH": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "The winter is HERE",
             "heading_size": "h1"
           }
         },
@@ -121,6 +121,7 @@
         "button_BnAN6n"
       ],
       "settings": {
+        "image": "shopify://shop_images/IMG_2890.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
