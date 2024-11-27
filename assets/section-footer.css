@@ -599,3 +599,28 @@
   color: rgb(var(--color-foreground)) !important;
   opacity: 1 !important;
 }
+
+/* Override the body text opacity for footer headings */
+.footer-block__heading {
+  color: rgb(var(--color-foreground)) !important;  /* Use rgb instead of rgba */
+  opacity: 1 !important;
+  font-weight: 500 !important;  /* Make it slightly bolder */
+}
+
+/* Additional override for Montserrat font */
+@media only screen and (min-width: 970px) {
+  .footer-block__heading {
+    color: rgb(var(--color-foreground)) !important;
+    opacity: 1 !important;
+    font-weight: 500 !important;
+  }
+}
+
+/* Override any potential theme modifications */
+.footer .footer-block__heading,
+h2.footer-block__heading,
+.footer__content-top .footer-block__heading,
+.footer .footer-block .footer-block__heading {
+  color: rgb(var(--color-foreground)) !important;
+  opacity: 1 !important;
+}
