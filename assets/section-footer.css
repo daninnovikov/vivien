@@ -592,3 +592,10 @@
     opacity: 1 !important;
   }
 }
+
+/* Add additional specificity for the footer headings */
+.footer .footer-block .footer-block__heading,
+.footer__content-top .footer-block__heading {
+  color: rgb(var(--color-foreground)) !important;
+  opacity: 1 !important;
+}
