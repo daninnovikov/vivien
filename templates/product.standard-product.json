@@ -45,14 +45,40 @@
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
-        "share": {
-          "type": "share",
+        "collapsible_tab_gdc8PA": {
+          "type": "collapsible_tab",
           "settings": {
-            "share_label": "Share"
+            "heading": "Description",
+            "icon": "none",
+            "content": "<p>asdasdadas</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_fBL7EK": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Sizing and fit",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible_tab_VF6tJk": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Fabric Contents & Care",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible_tab_tyAycq": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping Information",
+            "icon": "none",
+            "content": "",
+            "page": ""
           }
         }
       },
@@ -63,23 +89,67 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "share"
+        "collapsible_tab_gdc8PA",
+        "collapsible_tab_fBL7EK",
+        "collapsible_tab_VF6tJk",
+        "collapsible_tab_tyAycq"
       ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
-        "media_size": "large",
+        "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
+        "gallery_layout": "thumbnail_slider",
         "media_position": "left",
-        "image_zoom": "lightbox",
+        "image_zoom": "hover",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "rich_text_MAp9Qp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4CgqW7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_9zXFKN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_7BfWXE": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_4CgqW7",
+        "text_9zXFKN",
+        "button_7BfWXE"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "related-products": {
@@ -103,6 +173,7 @@
   },
   "order": [
     "main",
+    "rich_text_MAp9Qp",
     "related-products"
   ]
 }
