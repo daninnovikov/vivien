@@ -570,3 +570,163 @@
   }
 }
 {% endschema %}
+
+<style>
+  @media screen and (max-width: 767px) {
+    .footer-block.grid__item {
+      margin: 0;
+    }
+
+    .footer-block__details-content {
+      display: none;
+      padding-left: 2.5em;
+    }
+
+    .footer-block__heading {
+      display: block;
+      line-height: 2.5em;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      padding-left: 1em;
+      font-size: 1em;
+      font-weight: 100;
+    }
+
+    /* Background hover animation */
+    .footer-block__heading:before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background: currentColor;
+      opacity: 0.1;
+      transition: all 0.3s ease-out;
+    }
+
+    .footer-block__heading:hover:before,
+    .footer-block__heading.active:before {
+      width: 2%;
+    }
+
+    /* Default arrow styling */
+    .footer-block:not(.footer-block--newsletter) .footer-block__heading:not(.community-heading)::after {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-bottom: 2px solid currentColor;
+      border-right: 2px solid currentColor;
+      position: absolute;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+      transition: all 0.5s cubic-bezier(0.36, 1.64, 0.29, 0.88);
+    }
+
+    /* Active state for arrow */
+    .footer-block__heading.active::after {
+      transform: translateY(-50%) rotate(-135deg);
+    }
+
+    /* Link styling */
+    .footer-block__details-content a {
+      display: block;
+      padding: 0.5em 0;
+      transform: translate(0px, 0px);
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      position: relative;
+      z-index: 2;
+    }
+
+    .footer-block__details-content a:hover {
+      transform: translate(8px, 0px);
+      opacity: 0.85;
+    }
+  }
+
+  /* Ensure content is always visible on desktop */
+  @media screen and (min-width: 768px) {
+    .footer-block__details-content {
+      display: block !important;
+    }
+  }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Only run this code on mobile
+  const isMobile = window.innerWidth < 768;
+  if (!isMobile) return;
+
+  // Add class to Community heading
+  document.querySelectorAll('.footer-block__heading').forEach(heading => {
+    if (heading.textContent.trim() === 'Community') {
+      heading.classList.add('community-heading');
+      heading.style.cursor = 'default';
+    }
+  });
+
+  // Only add click handlers to non-Community headings on mobile
+  const headings = document.querySelectorAll('.footer-block__heading:not(.community-heading)');
+  let isAnimating = false;
+  
+  headings.forEach(heading => {
+    heading.addEventListener('click', function(e) {
+      // Only handle clicks on mobile
+      if (window.innerWidth >= 768) return;
+      
+      e.preventDefault();
+      e.stopPropagation();
+      
+      if (isAnimating) return;
+      isAnimating = true;
+      
+      const content = this.nextElementSibling;
+      
+      // Close all other sections
+      headings.forEach(h => {
+        if (h !== this) {
+          h.classList.remove('active');
+          if (h.nextElementSibling) {
+            h.nextElementSibling.style.display = 'none';
+          }
+        }
+      });
+      
+      // Toggle current section
+      if (this.classList.contains('active')) {
+        this.classList.remove('active');
+        if (content) {
+          content.style.display = 'none';
+        }
+      } else {
+        this.classList.add('active');
+        if (content) {
+          content.style.display = 'block';
+        }
+      }
+      
+      setTimeout(() => {
+        isAnimating = false;
+      }, 300);
+    });
+  });
+  
+  // Handle window resize
+  window.addEventListener('resize', function() {
+    const isDesktop = window.innerWidth >= 768;
+    if (isDesktop) {
+      // Reset all mobile-specific styles when switching to desktop
+      document.querySelectorAll('.footer-block__details-content').forEach(content => {
+        content.style.display = '';
+      });
+      document.querySelectorAll('.footer-block__heading').forEach(heading => {
+        heading.classList.remove('active');
+      });
+    }
+  });
+});
+</script>
