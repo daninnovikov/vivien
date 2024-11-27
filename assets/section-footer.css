@@ -558,15 +558,19 @@
 @media screen and (min-width: 750px) {
   .footer__list-social.list-social {
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 0;
-    margin: 0;
-    padding: 0;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 3rem;
+    margin-top: 2.5rem !important;
   }
 
   .list-social__link:hover {
     transform: scale(1.1);
     text-decoration: none;
   }
+}
+
+.list-social__link {
+  padding: 0 !important;
+  margin: 0 !important;
 }
