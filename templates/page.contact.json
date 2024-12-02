@@ -19,7 +19,7 @@
     "form": {
       "type": "contact-form",
       "settings": {
-        "heading": "To fill out the form, simply complete the required fields below with your details and message. Once submitted, our team will get back to you as soon as possible! 😊",
+        "heading": "Fill out the form",
         "heading_size": "h2",
         "color_scheme": "scheme-1",
         "padding_top": 36,
