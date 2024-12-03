@@ -9,6 +9,21 @@
  */
 {
   "sections": {
+    "video_djRRTB": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/proposal.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "background_video_iKAQVQ": {
       "type": "background-video",
       "blocks": {
@@ -159,6 +174,7 @@
     }
   },
   "order": [
+    "video_djRRTB",
     "background_video_iKAQVQ",
     "featured_collection",
     "rich_text_XniWza",
