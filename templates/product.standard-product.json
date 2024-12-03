@@ -50,7 +50,7 @@
           "settings": {
             "heading": "Description",
             "icon": "none",
-            "content": "<p>Discover French elegance with this pencil skirt,<strong> designed in Lyon.</strong> Its length, just \"two fingers above the knee,\" adds a feminine touch, while the central slit gives it a playful and chic look.</p><p>The skirt features a zipper, belt loops for adding your favorite accessories, and practical pockets for everyday convenience.</p><p><strong>Perfect for those who love vintage</strong>-inspired style and simple sophistication. <br/>The model on photos is 164 cm tall and wears size 36.</p><p>Pair it with a blouse, sweater, or classic shirt for an effortlessly charming outfit.<br/>*Belt in photos is not included. Used for styling purposes only.</p>{{ product.description }}{{ product.description }}",
+            "content": "<p>Discover French elegance with this pencil skirt,<strong> designed in Lyon.</strong> Its length, just \"two fingers above the knee,\" adds a feminine touch, while the central slit gives it a playful and chic look.</p><p>The skirt features a zipper, belt loops for adding your favorite accessories, and practical pockets for everyday convenience.</p><p><strong>Perfect for those who love vintage</strong>-inspired style and simple sophistication. <br/>The model on photos is 164 cm tall and wears size 36.</p><p>Pair it with a blouse, sweater, or classic shirt for an effortlessly charming outfit.<br/>*Belt in photos is not included. Used for styling purposes only.</p>{{ product.description }}{{ product.description }}{{ product.description }}",
             "page": ""
           }
         },
