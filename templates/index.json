@@ -95,15 +95,15 @@
         "heading_w8r4jH": {
           "type": "heading",
           "settings": {
-            "heading": "The winter is HERE",
+            "heading": "<strong>The Return of ELEGANCE</strong>",
             "heading_size": "h1"
           }
         },
         "text_4Jappc": {
           "type": "text",
           "settings": {
-            "text": "<p>Step into the season with our elegant winter collection. A perfect blend of style and warmth—our tailored blazers and fashionable skirts will keep you chic and cozy all winter long. Don’t miss the chance to make these essential pieces a part of your wardrobe!</p>",
-            "text_style": "body"
+            "text": "<p>Embrace timeless sophistication with our latest collection. From gracefully tailored dresses to effortlessly chic silhouettes, each piece is designed to bring refinement and confidence to your wardrobe. Elevate your style with classic elegance—because true beauty never goes out of fashion! ⏳</p>",
+            "text_style": "subtitle"
           }
         },
         "button_BnAN6n": {
@@ -121,15 +121,15 @@
         "button_BnAN6n"
       ],
       "settings": {
-        "image": "shopify://shop_images/IMG_28902.jpg",
-        "height": "adapt",
+        "image": "shopify://shop_images/IMG_0988.jpg",
+        "height": "large",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "overlap",
         "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-8be215f8-ba32-4a4f-8d1a-22acbef0e56b",
+        "color_scheme": "scheme-24060bf5-3323-47ab-b1a2-b5b817edb6bf",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
