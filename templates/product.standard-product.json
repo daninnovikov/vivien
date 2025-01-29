@@ -50,7 +50,7 @@
           "settings": {
             "heading": "Description",
             "icon": "none",
-            "content": "<p>{{ product.description }}</p>",
+            "content": "{{ product.description }}",
             "page": ""
           }
         },
@@ -59,7 +59,7 @@
           "settings": {
             "heading": "Sizing and fit",
             "icon": "none",
-            "content": "<p><strong>Celebrate your uniqueness with our custom tailoring service! </strong>We understand that every <strong>woman is</strong> <strong>beautifully one of a kind</strong>. Share your measurements at checkout, and we’ll craft a piece designed to fit you flawlessly — your perfect garment, made just for you.</p>",
+            "content": "<p></p>{{ product.metafields.custom.size_and_fit | metafield_tag }}",
             "page": ""
           }
         },
