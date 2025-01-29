@@ -68,7 +68,7 @@
           "settings": {
             "heading": "Fabric Contents & Care",
             "icon": "none",
-            "content": "<p>Fabric: 56% Polyamide, 44% Wool<br/>Lining: 53% Viscose, 47% Acetate<br/><br/>Hand or machine wash on a gentle cycle at up to 30°C. Use mild detergents. Avoid prolonged soaking to prevent damage to the fibers.<br/><br/>All fabrics are made in Italy.</p>{{ product.metafields.custom.fabric_and_care | metafield_tag }}",
+            "content": "<p></p>{{ product.metafields.custom.fabric_and_care | metafield_tag }}",
             "page": ""
           }
         },
