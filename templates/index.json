@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/Frame_1_2.jpg",
             "heading": "Heading",
             "heading_size": "h1",
-            "subheading": "Hweqw eqw",
+            "subheading": "",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
@@ -26,7 +26,7 @@
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "",
+            "color_scheme": "scheme-ab71c954-a165-4ae4-adf9-a9c17b0c8861",
             "text_alignment_mobile": "center"
           }
         },
