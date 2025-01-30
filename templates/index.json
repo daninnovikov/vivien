@@ -9,40 +9,40 @@
  */
 {
   "sections": {
-    "hero_slider_N7nNMf": {
-      "type": "hero-slider",
+    "slideshow_GDykUR": {
+      "type": "slideshow",
       "blocks": {
-        "slide_LkkACN": {
+        "slide_Lk8qFE": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/IMG_9129.jpg",
-            "link": "shopify://collections"
-          }
-        },
-        "slide_rCxda4": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/IMG_1221.jpg",
-            "link": ""
-          }
-        },
-        "slide_6fhNUK": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/IMG_0988.jpg",
-            "link": ""
+            "image": "shopify://shop_images/Frame_1_2.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
-        "slide_LkkACN",
-        "slide_rCxda4",
-        "slide_6fhNUK"
+        "slide_Lk8qFE"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
     "background_video_iKAQVQ": {
@@ -197,7 +197,7 @@
     }
   },
   "order": [
-    "hero_slider_N7nNMf",
+    "slideshow_GDykUR",
     "background_video_iKAQVQ",
     "featured_collection",
     "rich_text_XniWza",
