@@ -36,8 +36,9 @@ slideshow-component .slideshow.banner {
 .slideshow__text.banner__box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   max-width: 54.5rem;
+  padding-bottom: 5rem;
 }
 
 .slideshow__text > * {
@@ -97,6 +98,9 @@ slideshow-component .slideshow.banner {
   .slideshow__text-wrapper.banner__content {
     height: 100%;
     padding: 5rem;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 1rem;
   }
 }
 
