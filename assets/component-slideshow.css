@@ -46,12 +46,30 @@ slideshow-component .slideshow.banner {
 }
 
 .slideshow__text.banner__box h2 {
-  font-size: 4.5em;
+  font-size: 2.5em;
   line-height: 1.2;
   margin-bottom: 2rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@media screen and (min-width: 550px) {
+  .slideshow__text.banner__box h2 {
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .slideshow__text.banner__box h2 {
+    font-size: 4.5em;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .slideshow__text.banner__box h2 {
+    font-size: 6em;
+  }
 }
 
 @media screen and (min-width: 750px) {
@@ -61,10 +79,6 @@ slideshow-component .slideshow.banner {
     display: flex;
     align-items: flex-end;
     padding-bottom: 1rem;
-  }
-  
-  .slideshow__text.banner__box h2 {
-    font-size: 6em;
   }
 }
 
