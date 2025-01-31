@@ -47,7 +47,7 @@ slideshow-component .slideshow.banner {
 }
 
 .slideshow__text.banner__box h2 {
-  font-size: clamp(2em, 8vw, 2.5em);
+  font-size: clamp(3em, 10vw, 3em);
   line-height: 1.2;
   margin-bottom: 2rem;
   white-space: nowrap;
