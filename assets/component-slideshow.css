@@ -37,7 +37,7 @@ slideshow-component .slideshow.banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 90%;
+  max-width: 95%;
   padding: 1rem;
   background: transparent;
 }
@@ -47,7 +47,7 @@ slideshow-component .slideshow.banner {
 }
 
 .slideshow__text.banner__box h2 {
-  font-size: clamp(1.5em, 5vw, 2.5em);
+  font-size: clamp(2em, 8vw, 2.5em);
   line-height: 1.2;
   margin-bottom: 2rem;
   white-space: nowrap;
