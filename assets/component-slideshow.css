@@ -37,13 +37,15 @@ slideshow-component .slideshow.banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 98%;
+  max-width: 100%;
   padding: 1rem;
+  padding-right: 2rem;
   background: transparent;
 }
 
 .slideshow__text > * {
   max-width: 100%;
+  padding-right: 1rem;
 }
 
 .slideshow__text.banner__box h2 {
