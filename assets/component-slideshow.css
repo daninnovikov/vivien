@@ -91,7 +91,7 @@ slideshow-component .slideshow.banner {
 
   .banner--mobile-bottom .slideshow__text-wrapper {
     position: absolute;
-    top: 65%;
+    top: 55%;
     transform: translateY(-50%);
     left: 0;
     right: 0;
