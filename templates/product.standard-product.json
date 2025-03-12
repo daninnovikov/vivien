@@ -77,7 +77,7 @@
           "settings": {
             "heading": "Shipping Information",
             "icon": "none",
-            "content": "<p>Please note that orders marked as pre-order items will be shipped later, and you will receive an email when the item is dispatched. For in-stock orders, you will receive your order within a week. You can find all the details in the section: <a href=\"https://vivienvibe.com/pages/deliveries\">https://lionea.shop/pages/deliveries</a></p>",
+            "content": "<p>Please note that orders marked as pre-order items will be shipped later, and you will receive an email when the item is dispatched. For in-stock orders, you will receive your order within a week. You can find all the details in the section: https://lionea.shop/policies/shipping-policy </p>",
             "page": ""
           }
         }
